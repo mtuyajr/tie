@@ -1,0 +1,771 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+
+	background: #ddd;
+}
+
+.modal{
+	width: 70%;
+	background: #fff;
+	height: 65%;
+  	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.titlehead{
+	text-align: center;
+	color:darkorange;
+	font-family: 'helvetica',arial;
+}
+
+.table{
+	width: 90%;
+	margin: 20px auto;
+}
+
+
+
+.table form input[type="text"]{
+	width: 98%;
+	margin-top: 10px;
+	border-radius: 3px;
+	background: #fff;
+	padding-left: 3px;
+	height: 40px;
+	border:1px solid #eaeaea;
+    outline:none;
+}
+
+.table form input[type="text"]:hover{
+	box-shadow: .5px .5px 5px #ebebbb;
+}
+
+.table form input[type="text"]:focus{
+	box-shadow: .5px .5px 5px #ebebbb;
+	border-color:#4d90fe; 
+}
+
+
+.table form input[type="submit"]{
+	width: 98.5%;
+	margin-top: 5px;
+	padding:9px 0px;
+	border: none;
+	background: darkorange;
+	border-radius: 3px;
+	color:#fff;
+	cursor: pointer;
+}
+
+
+
+.table form input[type="submit"]:hover{
+	background: orange;
+}
+
+
+.loginRegister{
+	text-align: center;
+	font-family: arial;
+	margin-top: 9px;
+	font-size: 15px;
+}
+
+.loginRegister a {
+	color: darkorange;
+}
+
+
+.loginRegister a:hover{
+	color: orange;
+}
+
+.login_modal{
+	width: 50%;
+	background: #fff;
+	height: 60%;
+  	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	border-radius: 3px;
+}
+
+.loginTable{
+	width: 55%;
+	height: 55%;
+  	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+.loginTable tr td input{
+	width: 98.8%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	background: #fff;
+	padding-left: 3px;
+	height: 40px;
+	border:1px solid #eaeaea;
+    outline:none;
+}
+
+
+.loginTable tr td input:hover{
+	box-shadow: .5px .5px 5px #ebebbb;
+}
+
+.loginTable tr td input:focus{
+	box-shadow: .5px .5px 5px #ebebbb;
+	border-color:#4d90fe; 
+}
+
+
+
+.loginTable tr td input[type='submit']{
+	width: 100%;
+	margin-top: 5px;
+	padding:9px 0px;
+	border: none;
+	background: darkorange;
+	border-radius: 3px;
+	color:#fff;
+	cursor: pointer;
+}
+
+.loginTable tr td input[type="submit"]:hover{
+	background: orange;
+}
+
+
+.loginTable tr td label{
+	font-family: arial;
+	color:orange;
+	margin-top: 5px;
+}
+
+
+.errorHandler{
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	color:#c0392b;
+}
+
+
+.regions,.regionsTo{
+	background: #f4f4f4;
+	width: 40%;
+	height: 60%;
+	overflow: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0 0 8px #999888;
+	display: none;
+}
+
+
+
+.regions ul li,.regionsTo ul li{
+	padding: 10px 30px;
+	font-family: arial;
+	border-bottom: 1px solid #eee;
+	color:#333;
+	cursor: pointer;
+}
+
+.regions ul li:hover,.regionsTo ul li:hover{
+	background: #fff;
+}
+
+.regionbnd{
+	width: 100%;
+	height: 100%;
+	background: blue;
+	position: fixed;
+}
+
+#listValcancel,#listValcancelTo{
+	text-align: center;
+	background: #fff;
+	color:darkorange;
+}
+
+
+.header{
+	background: #fff;
+	padding:13px 10px;
+	box-shadow: 0 0 5px #999;
+	font-size: 17px;
+	font-family: arial;
+}
+
+#tietitle{
+	color:darkorange;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	width: 15%;
+}
+
+#route{
+	color:darkorange;
+}
+
+.resultsdiv{
+	width: 60%;
+	height: 88%;
+	overflow: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-45%);
+	font-family: arial;
+
+}
+
+.bus{
+	width: 99%;
+	height: 100px;
+	background: #fff;
+	margin:5px auto;
+	border:1px solid #c4c4c4;
+}
+
+
+.busheader{
+	width: 70%;
+	background: #fff;
+	margin:5px auto;
+	border:1px solid #c4c4c4;
+	padding:10px 0px;
+}
+
+.busheader table tr th{
+	font-weight: normal;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+.nobus{
+	text-align: center;
+	width: 50%;
+	padding:25px 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	border-radius: 2px;
+	font-family: 'monospace',arial;
+	box-shadow: 0 0 10px #999888;
+	display: none;
+}
+
+.buttonback{
+	margin-top: 25px;
+}
+
+.buttonback a{
+	background: darkorange;
+	color:#fff;
+	padding:10px 40px;
+}
+
+.buttonback a:hover{
+	background: orange;
+}
+
+
+#td{
+	padding-left: 10px;
+	padding-top: 10px;
+	font-family: monospace;
+}
+
+#busname{
+	color:darkorange;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: arial;
+}
+
+#rate{
+	background: #2980b9;
+	color:#fff;
+	padding:5px 10px;
+	border-radius: 15px;
+	margin: 15px 0px !important;
+}
+
+#atime,#dtime{
+	font-family: arial;
+	font-size:20px;
+}
+
+#price{
+	font-size:20px;
+	color:#d35400;
+}
+
+#seats{
+	color:#27ae60;
+	padding-left: 7px;
+}
+
+#bustable{
+	margin:0px auto;
+	width: 99%;
+}
+
+#boarding,#drop{
+	color:#2980b9;
+	cursor: pointer;
+}
+
+#button{
+	background: #d35400;
+	color:#fff;
+	text-align: center;
+	padding:8px 0px;
+	width: 90%;
+	cursor: pointer;
+}
+
+#button:hover{
+	background: #e67e22;
+}
+
+
+#aftertie{
+	font-size: 15.5px;
+}
+
+
+.bookingheader{
+	padding:15px 10px;
+	font-family: arial;
+	background: darkorange;
+	color:#fff;
+	font-size: 16px;
+}
+
+.selectSeat{
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+
+#busseat tr td{
+	text-align: center;
+}
+
+#busseat tr td img{
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+#whitecolor{
+	color:#fff;
+}
+
+
+.busseat{
+	border:2px solid #8e44ad;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 3px;
+	padding-top: 5px;
+}
+
+#rotate{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    
+}
+
+
+
+input[type='checkbox']{
+	display:;
+}
+
+
+#booktitle{
+	background: #f4f4f4;
+	width: 45.5%;
+	color:darkorange;
+	box-shadow: 0 5px 3px -3px #999;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:15px;
+	font-family: arial;
+	text-align: center;
+	padding:10px 0px;
+}
+
+.selectedSeat{
+	background: #16a085;
+	width: 20%;
+	padding:20px 0px;
+	text-align: center;
+	color:#fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-family: monospace;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.selectedSeat:hover{
+	background: #1abc9c;
+
+}
+
+.businfomation{
+	width: 24%;
+	position: absolute;
+	bottom: 3px;
+	background: #f4f4f4;
+	top: 49px;
+	font-family: monospace;
+	font-size: 15px;
+}
+
+.paymentinfomation{
+	right: 0px;
+	width: 24%;
+	position: absolute;
+	bottom: 3px;
+	background: #f4f4f4;
+	top: 49px;
+	margin-left: 5px;
+	padding:5px;
+	font-family: monospace;
+	font-size: 15px;
+}
+
+.businfomationH{
+	background: #ddd;
+	width: 96%;
+	padding:10px 0px;
+	text-align: center;
+	margin-left: 1.5%;
+	margin-top: 10px;
+}
+
+.paymentinfomationH{
+	background: #ddd;
+	width: 96%;
+	padding:10px 0px;
+	text-align: center;
+	margin-left: 1.5%;
+	margin-top: 5px;
+	font-family: monospace;
+}
+
+
+.businfomationT{
+	background: #ddd;
+	width: 96%;
+	margin-left: 1.5%;
+	border-top: 2px solid #eee;
+	padding-bottom: 35px;
+}
+
+
+.businfomationT table tr td{
+	padding:7px 0px;
+	border-bottom: 1px solid #eee;
+}
+
+#bookingbody{
+	background: #fff;
+}
+
+.less{
+	width: 45%;
+}
+
+.goHome{
+	width: 96%;
+	margin:5px auto;
+	line-height: 2.5;
+	height: 40px;
+	padding-left: 2px;
+}
+
+.goHome a{
+text-align: center;
+}
+
+
+.goHome a:hover{
+	color:darkorange;
+}
+
+#seatSelected{
+	padding:10px 0px;
+	margin-top: 10px;
+}
+
+
+#tprice{
+	text-align: center;
+	font-weight: bold;
+	font-family: monospace;
+	width: 70%;
+	font-size: 17px;
+	padding:10px 0px;
+}
+
+.seatSelection{
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.seatSelectionH{
+	margin-bottom: 10px;
+}
+
+
+.seatSelection ul li{
+	list-style: none;
+	background: #fff;
+	padding:13px 7px;
+	margin-bottom: 5px;
+	text-align: left;
+	color:#888;
+	box-shadow: 0 0 3px #999;
+}
+
+
+.seatSelection ul li span{
+	float: right;
+	color:blue;
+	cursor: pointer;
+}
+
+#remove{
+	color:#999 !important;
+	font-size: 17px;
+}
+
+label input[type='checkbox']{
+	display: none;
+}
+
+input[type='checkbox'] + span:before{
+	content: url('../image/available.png');
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked + span:before{
+	content: url('../image/selected.png');
+	cursor: pointer;
+}
+
+input[type='checkbox']:disabled + span:before{
+	content: url('../image/taken.png');
+	cursor: not-allowed;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.finishing{
+	width: 60%;
+	height: 90%;
+	background: #ddd;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 3px;
+	box-shadow: 0 0 10px #999;
+	font-family: arial;
+	display: none;
+}
+
+.finishingH{
+	padding:15px 15px;
+	background: darkorange;
+	color:#fff;
+	font-size:15px;
+}
+
+#posRight{
+	float: right;
+	cursor: pointer;
+	background: #333;
+	box-shadow: 0 0 3px #999;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.finishingF{
+	background: ;
+	width: 97%;
+	margin:5px auto;
+}
+
+.phonenumber{
+	padding:10px 5px;
+	border-bottom: 1px solid #f4f4f4;
+	margin-bottom: 5px;
+}
+
+input[type="phone"]{
+	border:1px solid #999;
+	padding:7px 5px;
+	background: #f4f4f4;
+	border-radius: 4px;
+	box-shadow: inset 0 0 3px #bbb;
+	width: 30%;
+}
+
+input[type="phone"]:focus{
+	border:1px solid darkblue;
+	box-shadow: 0 0 2px blue;
+}
+
+input[type='text'],select{
+	width: 90%;
+}
+
+input[type='text']{
+	border:1px solid #999;
+	padding:7px 5px;
+	background: #f4f4f4;
+	border-radius: 4px;
+	box-shadow: inset 0 0 3px #bbb;
+}
+
+select{
+	padding:3px 3px;
+}
+
+.finishingF table tr td{
+	padding-bottom: 5px;
+}
+
+.finishingF table tr td{
+	text-align: center;
+}
+
+#seatFinish{
+	background: #ddd;
+	text-align: center;
+	color:#888;
+	font-weight: bold;
+}
+
+.sbtn{
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+}
+
+#submitform{
+	padding:5px 10px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+	.modal{
+		width: 87%;
+		height: 70%;
+		border-radius: 3px;
+	}
+
+	.containerResult{
+	width: 99%;
+	height: 99%;
+}
+
+
+.login_modal{
+	width: 95%;
+	height: 65%;
+}
+
+.loginTable{
+	width: 95%;
+	height: 55%;
+}
+
+}

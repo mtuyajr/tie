@@ -1,0 +1,358 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font-family: arial;
+	background: #f4f4f4;
+}
+
+#bodyW{
+	background: #fff;
+}
+
+.headTitle{
+	background: #333;
+	color:darkorange;
+	padding:15px 20px;
+	font-style: lighter;
+	box-shadow: 0 1px 5px 1px #666;
+	font-size: 16px;
+}
+
+.fa-bus{
+	font-size: 20px !important;
+	padding-right: 5px;
+}
+
+#Logout{
+	color:orange;
+	right: 0px;
+	position: absolute;
+	margin-right: 20px;
+}
+
+#Logout a{
+	background: #eee;
+	color:#333;
+	padding:4px 10px;
+	border-radius: 3px;
+	border:1px solid #444;
+	text-shadow: 0px .5px 1px #4d4d4d;
+	box-shadow:0 0 1px #777;
+}
+
+.containerMain{
+	position: absolute;
+	background: #333;
+	width: 98%;
+	height: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-43%);
+	box-shadow: 0 0 10px #ededed;
+	border:1px solid #111;
+}
+
+.containerMain a{
+	color:orange;
+}
+
+.containerMainW{
+	position: absolute;
+	background: #fff;
+	width: 98%;
+	height: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-43%);
+	box-shadow: 0 0 10px #ededed;
+}
+
+#controllPanel{
+	text-align: center;
+	color:#333;
+	margin-top: 15px;
+}
+
+.table table tr td{
+	background: #333;
+	padding:4% 0px;
+	text-align: center;
+	border:1px solid #444;
+	border-radius: 3px;
+	transition: .35s ease-ease;
+	cursor: pointer;
+	color:darkorange;
+}
+
+.table table tr td:hover{
+	background: #f4f4f4;
+	transition: .35s ease;
+}
+
+
+
+.table{
+	width: 90%;
+	height: auto;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+
+}
+
+.fa{
+	font-size: 25px !important;
+	padding-bottom: 5px;
+}
+
+.addform{
+	width: 70%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.addform table{
+	width: 100%;
+}
+
+.addform form input[type='text']{
+	width: 95%;
+	font-size: 15.5px;
+	border:1px solid #eee;
+	padding:10px 5px;
+	margin:10px 0px;
+	background: #fff;
+}
+
+.addform form input[type='text']:hover,#textarea{
+	box-shadow: 0 6px 4px -4px #999;
+}
+
+#textarea{
+	width: 95%;
+	height: 70px;
+	font-size: 14.5px;
+	border:1px solid #eee;
+	padding:10px 5px;
+	margin:10px 0px;
+	background: #fff;
+}
+
+#btnright{
+	text-align: right;
+}
+
+
+.addform form input[type='submit']{
+	margin-right: 5%;
+	border:none;
+	padding:5px 10px;
+	color:darkorange;
+	background: #333;
+	cursor: pointer;
+	border-radius: 3px;
+	box-shadow: 0 4px 3px -3px #999888;
+}
+
+.addform form input[type='reset']{
+	margin-right: 2%;
+	border:none;
+	padding:5px 10px;
+	color:darkorange;
+	background: #fff;
+	cursor: pointer;
+	box-shadow: 0 0 3px #999888;
+	border-radius: 3px
+}
+
+.addform form input[type='submit']:hover,.addform form input[type='reset']:hover{
+	transform: scale(1.05);
+}
+
+
+.notification{
+	width: 30%;
+	background: #f4f4f4;
+	z-index: 100;
+	position: relative;
+	margin:-50px auto;
+	line-height: 2;
+	border-radius:4px;
+	font-family: 'monospace',arial;
+	padding:5px 10px;
+	box-shadow: 0 0 7px #888;
+
+}
+
+.aboutModal{
+	width: 400px;
+	height: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background:#f4f4f4;
+	border-radius: 30px;
+	box-shadow: #eee;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	box-shadow: 0 0 3px #999;
+}
+
+
+.headerAbout{
+	text-shadow: 0px .5px 1px #4d4d4d;
+	font-size: 160px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color:darkorange;
+}
+
+.footerAbout{
+	text-shadow: 0px .5px 1px #4d4d4d;
+	font-size: 20px;
+}
+
+.close{
+	margin-top: 30px;
+	background: #f4f4f4;
+	border:1px solid #eee;
+	width: 100px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px;
+	box-shadow: 0 0 5px #999;
+	border-radius: 3px;
+	color:darkorange;
+}
+
+.close:hover{
+	box-shadow: 0 0 3px #999;
+}
+
+.ResultTable{
+	background: blue;
+}
+
+#from,#to{
+	width: 43.5%;
+}
+
+.fa-bus{
+	color:darkorange !important;
+	padding:0px 2%;
+}
+
+
+#myInput {
+    background-image: url('../images/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 16px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+
+.editable{
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 4px;
+}
+
+input[type='button']{
+	border:1px solid #999;
+	padding:4px 14px;
+	cursor: pointer;
+	border-radius: 3px;
+	color:#000;
+	background: #ddd;
+}
+
+#edit:hover{
+	background: #2980b9;
+	color:#fff;
+	border:none;
+}
+
+#delete:hover{
+	background: #e74c3c;
+	color:#fff;
+	border:none;
+}
+
+
+.busProfileContainer{
+	width: 90%;
+	margin:10px auto;
+	border: 1px solid #eee;
+	text-align: center;
+	padding:10px 0px;
+}
+
+.busProfileContainer ul li{
+	border:1px solid #999;
+	padding:15px 0px;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	margin:5px 3px;
+	cursor: pointer;
+}
+
+.busProfileContainer ul li:hover{
+	transition: .15s ease-in;
+	background: #f4f4f4;
+	border:1px solid #999;
+}
+
+#icon-show{
+	color:#d8d8d8;
+	float: right;
+	margin-right: 8px;
+}
+
+.fa-check-circle-o{
+	font-size: 16px !important;
+	font-weight: lighter;
+}
+
+.done{
+	color:#7f7ded !important;
+}

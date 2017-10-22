@@ -1,0 +1,151 @@
+*{
+	padding: 0px;
+	margin:0px;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	font-family: arial;
+	background: #f4f4f4;
+}
+
+
+.container{
+	width: 70%;
+	height: auto;
+	margin:0px auto;
+	padding:5px 20px;
+	background: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.image-container{
+	width: 100%;
+	height: 400px;
+	background: #333;
+	box-shadow: 0 8px 6px -6px #000;
+	overflow: hidden;
+}
+
+.image-container img{
+  width: 100% !important;
+  height: 100% !important;
+  display: inline-block;
+  border:none;
+  padding:0px;
+  margin:0px;
+
+}
+
+.about-container{
+	border-radius: 3px;
+	margin-top: 12px;
+	padding:7px 10px;
+	box-shadow: 0 0 2px #a8a8a8;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	color:#444;
+	text-align: justify;
+}
+
+.aboutH,.contactH,.routesH{
+	text-align: center;
+	font-family: 'sans',arial;
+	font-size: 25px;
+	font-weight: 200;
+	padding:10px 0px;
+	color: #333;
+}
+
+.background{
+	border:1px solid #f3f3f3;
+	margin:30px 0px;
+	border-radius: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.btn-image{
+	background: #2c3e50;
+	background-size: 100%;
+	width: 30%;
+	font-family: sans;
+	font-weight: lighter;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 7px 5px -5px #000;
+	text-align: center;
+	padding:18px 0px;
+	color:#fff;
+	margin-top: 25px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+.btn-image:hover{
+	box-shadow: 0 6px 4px -4px #000;
+	background: #34495e;
+}
+
+
+.busname{
+	position: absolute;
+	top:30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:#fff;
+	font-family: sans;
+	font-size: 440%;
+	font-weight: lighter;
+	text-shadow: 0px .5px 1px #4d4d4d;
+}
+
+.tieinformation{
+	text-align: center;
+	background: #2c3e50;
+	color:#a8a9af;
+	width: 100%;
+	padding:20px 0px;
+}
+
+.routes-container ul li{
+
+	display: inline-block;
+	width: 20vw;
+	background: #16a085;
+	cursor: pointer;
+	color:white;
+	margin-bottom: 7px;
+	margin-left: 2px;
+	padding:10px 0px;
+}
+
+.routes-container ul li:hover{
+	background: #1abc9c;
+}
+
+.routes-container ul li:hover{
+	background: #1abc9c;
+}
+
+
+.routes-container ul li:nth-child(odd){
+	background: #f39c12;
+}
+
+.routes-container ul li:nth-child(odd):hover{
+	background: #f1c40f;
+}
+
+
+.contacts-container{
+	font-family: monospace,arial;
+}
+
+
